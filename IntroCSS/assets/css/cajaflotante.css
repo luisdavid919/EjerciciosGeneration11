@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(238, 234, 234);
+}
+
+.cajaflotante {
+    /*margin: 40px Aplica para todo */
+    margin:40px 40px 40px 40px;
+    background-color: #eeeeee;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-top: 2px;
+    border-width: 1px;
+
+}
+
+.cabecera{
+    padding: 10px;
+    border-bottom: solid 2px #eeeeee;
+}
+
+
+.contenido{
+    padding: 10px;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.botones{
+    padding: 10px;
+    border-top: 2px #eeeeee;
+}
+
+/* .contenido, .cabecera, .botones {
+    padding: 10px;
+}*/
+
+#aceptar {
+background-color:blue;
+border: 0px;
+border-radius: 4px;
+padding: 5px;
+color:white;
+}
+
+#cancelar{
+background-color: gray;
+border: 0px;
+border-radius: 4px;
+padding: 5px;
+color:white;
+}

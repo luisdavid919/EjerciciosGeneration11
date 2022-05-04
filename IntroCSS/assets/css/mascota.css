@@ -1,0 +1,46 @@
+body {
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+
+img {
+    border-radius: 50%;
+    border-style: dashed;
+    border-color:rgb(241, 31, 147);
+    border-width: 8px;
+    
+}
+
+.imagenperfil {
+    text-align: center;
+}
+
+.cita{
+    color: white;
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    border-style: dashed solid;
+    border-color: black;
+    border-width: 10px;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    text-shadow: 2px 3px black;
+}
+
+.line{
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+}
+
+.botones{
+    text-align: center;
+}

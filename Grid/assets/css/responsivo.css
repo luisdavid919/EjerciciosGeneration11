@@ -1,0 +1,75 @@
+body{
+    background-color: gray;
+}
+
+main{
+    display:grid;
+    margin: auto;
+    max-width: 100%; /*1000px*/
+    min-height: 100vh;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px 50px 100px 100px 200px;
+    grid-template-areas:   "my-header my-header my-header"
+    "my-nav my-section my-aside"
+    "my-footer my-footer my-footer";
+}
+
+/*Añadimos colores a las filas para poder ver todo mejor */
+
+header{
+    grid-area: my-header;
+    background-color:blueviolet;
+}
+
+nav{
+    grid-area: my-nav;
+    background-color: darkorange;
+}
+
+aside{
+    grid-area: my-aside;
+    background-color: darkmagenta;
+}
+
+section{
+    grid-area: my-section;
+    background-color: cadetblue;
+}
+
+footer{
+    grid-area: my-footer;
+    background-color: darkgreen;
+}
+
+/* Query para tablet*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 150px
+        100px
+        1fr
+        100px;
+      grid-template-areas: 
+        "my-header my-header my-header"
+        "my-nav my-nav my-nav"
+        "my-aside my-section my-section"
+        "my-footer my-footer my-footer"
+    }
+  }
+  /* Query para desktop*/
+  @media (min-width: 1001px) {
+    main {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 200px
+        1fr
+        100px;
+      grid-template-areas:
+        "my-header my-header my-header"
+                        "my-nav my-nav my-nav"
+                        "my-section my-section my-section"
+                        "my-aside my-aside my-aside"
+                        "my-footer my-footer my-footer";
+
+    }
+  }

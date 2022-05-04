@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios, tablas y anclajes</title>
+    <link rel="stylesheet" href="assets/css/miestilo.css" />
+  </head>
+  <body>
+
+    <a href="#formulario"><button>Este es el tema de formulario</button></a>
+    <a href="#primera"><button>Este es el tema de mi primera tabla</button></a>
+    <a href="#extincion"><button>Este es el tema animales en peligro de extincion</button></a>
+    <a href="#maqueta"><button>Este es el tema de maqueta web</button></a>
+    <a href="#maqueta2"><button>Este es el tema de otra maqueta web</button></a>
+    <a href="#periodico"><button>Este es el tema de periodico</button></a>
+    <!-- Formulario: Nos sirve para recopilar informacion de nuestros usuarios
+    
+    Atributos importantes:
+-action: es donde se va a enviar la informacion
+-method: es el metodo de envio de informacion-->
+
+    <!--Cuando trabajamos con botones dentro de los formularios. debemos usar input del tipo boton. Si trabajamos con botones fuera de él, usamos etiqueta button-->
+
+    <!--<h2>Este es mi formulario</h2>-->
+    <h1 id="formulario">Mi primer formulario</h1>
+    <div>
+      <fieldset>
+        <legend>Formulario de Contacto</legend>
+        <form action="datos.html">
+          <!--Ruta o link a enviarse-->
+          <label for="">Este es un botón simple</label>
+          <input type="button" />
+          <!--Este es un botón-->
+          <br /><br />
+          <input type="checkbox" name="" id="" />
+          <!--ESte es un checkbox-->
+          <br /><br />
+          <label for="">Selecciona una fecha de reserva</label>
+          <input type="date" name="" id="" />
+          <!--Este es una fecha-->
+          <br /><br />
+          <label for="">Ingresa tu email</label>
+          <input type="email" name="" id="" placeholder="ejemplo@correo.com" />
+          <!--Input type email-->
+          <br /><br />
+          <label for="text">Agrega aquí un texto de una sola línea</label>
+          <input type="text" name="" id="" />
+          <!--Input de tipo texto-->
+          <br /><br />
+          <label for="textarea">Ingresa aquí texto multilinea</label>
+          <textarea name="textarea" id="" cols="70" rows="5">
+Quejas, dudas y sugerencias</textarea
+          >
+          <br /><br />
+          <label for="password">Agrega tu contraseña</label>
+          <input type="password" name="password" id="" />
+          <!--Input de tipo password-->
+          <br /><br />
+          <input type="number" name="" id="" />
+          <!--Input de tipo numero-->
+          <br /><br />
+          <input type="file" name="" id="" />
+          <!--Input de tipo archivo-->
+          <br /><br />
+          <input type="radio" name="" id="" />
+          <input type="radio" name="" id="" />
+          <!--Input de tipo seleccion-->
+          <br /><br />
+          <label for="range">Este es un rango</label>
+          <input type="range" name="range" id="" />
+          <!--Input de tipo rango-->
+          <br /><br />
+          <label for="tel">Este es un teléfono</label>
+          <input
+            type="tel"
+            name="tel"
+            id=""
+            placeholder="+(lada)(numero telefónico)"
+            required/>
+          <!--Input de tipo telefono-->
+          <br /><br />
+          <label for="time">Este es tiempo</label>
+          <input type="time" name="time" id="" />
+          <!--Input de tiempo-->
+          <br /><br />
+          <input type="reset" value="Limpiar valores" />
+          <!--Reseteo-->
+          <br /><br />
+          <input type="submit" value="Enviar" />
+          <!--Envio de informacion-->
+          <br /><br />
+          <label for="">Tacos</label>
+          <input type="checkbox" name="tacos" id="" />
+          <br />
+          <label for="">Chilaquiles</label>
+          <input type="checkbox" name="chilaquiles" id="" />
+          <br />
+          <label for="">Ensaladas</label>
+          <input type="checkbox" name="ensalada" id="" />
+          <br />
+          <label for="">Tacos</label>
+          <input type="radio" name="tacos" id="" />
+          <br />
+          <label for="">Chilaquiles</label>
+          <input type="radio" name="chilaquiles" id="" />
+          <br />
+          <label for="">Ensaladas</label>
+          <input type="radio" name="ensalada" id="" />
+          <br />
+        </form>
+        <p>Los campos con "(*)" con obligatorios.</p>
+      </fieldset>
+    </div>
+
+    <h1 id="primera">Aqui empieza el tema de las tablas</h1>
+
+    <!--Tablas-->
+    <table id="tabla" align="center">
+
+      
+      <th></th>
+      <th>Header</th>
+      <th>Gastos del 2020</th>
+      <th>Gastos del 2021</th>
+      <th>Gastos del 2022</th>
+
+      <tr>
+          <!-- Abro etiqueta para iniciar mi fila 1 -->
+        <th>Enero</th><!--Esta es una celda de titulo-->
+        <th>Febrero</th>
+        <th>Marzo</th>
+        <th>Abril</th>
+      </tr> <!--CIerro mi fila, para dar inicio a otra -->
+
+      <tr>
+        <td>$400.00</td><!--ESte es una celda-->
+        <td>$500.00</td>
+        <td>$600.00</td>
+        <td>$1000.00</td>
+      </tr>
+    </table>
+
+    <h1 id="extincion">Animales en peligro de extinción</h1>
+
+    <!-- cellspacing: propiedad que especifica el espacio entre celdas
+    cellpadding: porpiedad que especifica el espacio entre border de celdas(interno)
+colspan: propiedad que especifica el numero de columnas que ocupa una celda 
+rowspan: propiedad que especifica el numero de filas que ocupa una celda-->
+
+    <table align="center" cellspacing="2" cellpadding="2" border="5" bgcolor="dddddd">
+
+        <td colspan="4" align="center">Aprender tablas es lo máximo
+        </td>
+
+
+        <tr> <!--Abro mi etiqueta para iniciar mi fila 1-->
+            <td colspan="4" align="center" bgcolor="666666">
+                <font color="#FFFFFF"><strong>Animales en peligro de extinción</strong></font>
+            </td>
+        </tr><!--Cierro mi fila 1, para dar inicio a otra fila-->
+        <tr bgcolor="aaaaaa"> <!--Inicio fila 2-->
+            <td>Nombre</td>
+            <td align="center">Cabezas</td>
+            <td align="center">Previsión 2010</td>
+            <td align="center">Previsión 2020</td>
+        </tr><!--Cierro fila 2, para dar inicio a otra nueva fila-->
+        <tr>
+            <td>Ballena</td>
+            <td align="center">6000</td>
+            <td align="center">4000</td>
+            <td align="center">1500</td>
+        </tr>
+        <tr>
+            <td>Oso Pardo</td>
+            <td align="center">50</td>
+            <td rowspan="2" colspan="2" align="center" bgcolor="red">0</td>
+        </tr>
+        <tr>
+            <td>Lince</td>
+            <td align="center">10</td>
+        </tr>
+        <tr>
+            <td>Tigre</td>
+            <td align="center">300</td>
+            <td colspan="2" align="center">210</td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+
+    <h1 id="maqueta">Maquetado de Pagina Web con una Tabla</h1>
+    <table id="paginaweb" border="2" align="center" width="100%">
+        <tr>
+            <td colspan="2" align="center">NAVBAR</td>
+        </tr>
+        <tr>
+            <td rowspan="2" align="center">TEXTO</td>
+            <td align="center">IMAGEN 1</td>
+        </tr>
+        <tr>
+            <td align="center">IMAGEN 2</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">FOOTER</td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+
+    <h1 id="maqueta2">Ejercicio Wireframe</h1>
+    <table id="paginaweb">
+        <tr>
+            <td colspan="5">NAVBAR</td>
+        </tr>
+        <tr>
+            <td  colspan="2" rowspan="3">TEXTO 1</td>
+            <td colspan="1" rowspan="3">TEXTO 2</td>
+            <td colspan="2">TEXTO 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">TEXTO 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">TEXTO 5</td>
+        </tr>
+        <tr>
+            <td>IMAGEN 1</td>
+            <td>IMAGEN 2</td>
+            <td>IMAGEN 3</td>
+            <td>IMAGEN 4</td>
+            <td>IMAGEN 5</td>
+        </tr>
+        <tr>
+            <td colspan="2">FOOTER 1</td>
+            <td colspan="3">FOOTER 2</td>
+        </tr>
+    </table>
+<br><br>
+    <h1 id="periodico">Periodico Wireframe</h1>
+    <table id="paginaweb">
+        <tr>
+            <td colspan="1">Logo</td>
+            <td colspan="6">Header</td>
+            <td colspan="1">Logo</td>
+        </tr>
+        <tr>
+            <td colspan="8">Navbar</td>
+        </tr>
+        <tr>
+            <td colspan="1">Texto</td>
+            <td colspan="6">Imagen</td>
+            <td colspan="1">Texto</td>
+        </tr>
+        <tr>
+            <td colspan="4">Texto</td>
+            <td colspan="4">Texto</td>
+        </tr>
+        <tr>
+            <td>Imagen</td>
+            <td>Imagen</td>
+            <td>Imagen</td>
+            <td colspan="4">Footer</td>
+            <td>Logo</td>
+        </tr>
+
+
+    </table>
+  </body>
+</html>

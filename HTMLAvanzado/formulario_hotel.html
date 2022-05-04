@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/hotel.css">
+    <title>Formulario de Reservación</title>
+</head>
+<body>
+    <h1>Formulario de Reservación "Hotel Miramar"</h1>
+    <div id="imagen">
+    <img src="assets/img/hotel.jpg" alt="" width="" height="400px">
+    </div>
+    <fieldset>
+        <legend>Formulario de Reservación</legend><br>
+    <form action="datos.html">
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" name="nombre" id="" required placeholder="Federico Perez">
+    <label for="email">Ingresa tu email</label>
+    <input type="email" name="email" id="" required placeholder="tucorreo@hotmail.com">
+    <label for="email">Confirma tu email</label>
+    <input type="email" name="email" id="" required placeholder="tucorreo@hotmail.com">
+    <br><br>
+    <label for="tel">Ingresa tu número de teléfono con código de área</label>
+    <input type="tel" name="tel" id="" required placeholder="+52546546">
+    <label for="text">Escribe tu ciudad de donde nos visitas</label>
+    <input type="text" placeholder="Cuernavaca">
+    <br><br>
+    <label for="date">Ingresa la fecha inicial de reserva</label>
+    <input type="date" name="date" id="">
+    <label for="date">Ingresa la fecha final de reserva</label>
+    <input type="date" name="date" id="">
+    <br><br>
+    <label for="time">Ingresa la hora de llegada</label>
+    <input type="time" name="time" id="">
+    <label for="time">Ingresa la hora de salida</label>
+    <input type="time" name="time" id="">
+    <br><br>
+    <label>Selecciona los servicios que deseas:</label><br><br>
+    <label for="services">Agua Caliente</label>
+    <input type="checkbox" name="services" id="">
+    <label for="services">Televisión por cable</label>
+    <input type="checkbox" name="services" id="">
+    <label for="services">Internet</label>
+    <input type="checkbox" name="services" id="">
+    <label for="services">Servicio a la habitación</label>
+    <input type="checkbox" name="services" id="">
+    <label for="services">Paquete de atracciones</label>
+    <input type="checkbox" name="services" id="">
+    <label for="services">Habitación con vista al mar</label>
+    <input type="checkbox" name="services" id=""><br><br>
+    <label>Selecciona el tipo de habitación que deseas:</label><br><br>
+    <label for="rating" id="estrella">⭐️⭐️⭐️</label>
+    <input type="radio" name="rating" id=""><br>
+    <label for="rating" id="estrella">⭐️⭐️⭐️⭐️</label>
+    <input type="radio" name="rating" id=""><br>
+    <label for="rating" id="estrella">⭐️⭐️⭐️⭐️⭐️</label>
+    <input type="radio" name="rating" id="">
+    <br><br>
+    <label for="texto">Ingresa algún comentario adicional:</label>
+    <textarea name="texto" id="" cols="120" rows="10"></textarea>
+    <br><br>
+    <div id="botones">
+    <input type="reset" value="Limpiar valores"> <!--Reseteo-->
+    <input type="submit" value="Enviar"> <!--Envio de informacion-->
+    </div>
+    <br><br>
+</fieldset>
+</form>
+    
+</body>
+</html>

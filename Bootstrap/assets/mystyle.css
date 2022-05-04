@@ -1,0 +1,16 @@
+.boton{
+    background-color: darkorange;
+}
+
+.jumbotron{
+    background-color: gray;
+}
+
+p{
+    font-size: 20px;
+}
+
+.carousel{
+width:50%;
+height: 50%;
+}

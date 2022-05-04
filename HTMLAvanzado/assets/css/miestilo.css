@@ -1,0 +1,29 @@
+legend{
+    color:cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input{
+    color:green;
+}
+
+div {
+    text-align: center;
+}
+
+#tabla{
+    border:1px solid black;
+}
+
+#paginaweb {
+    font-family:Arial, Helvetica, sans-serif;
+    border:5px solid black;
+    width:100%;
+    
+}
+
+td{
+    border: 5px solid black;
+    text-align: center;
+
+}
